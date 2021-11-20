@@ -6,6 +6,8 @@
   "description": "打掃煩惱 3 分鐘解決，公開1000+清潔達人的評價！別再浪費時間嘗試各家清潔公司，潔客幫為全台首創且最大居家清潔預約平台，讓你透過網頁、App預約家事服務，馬上來試試看吧！！",
   "catagories": ["business", "lifestyle"],
   "theme_color": "white",
+  "background_color": "white",
+  "display": "fullscreen",
   "icons": [
     {
       "src": "logo@48.png",
