@@ -24,9 +24,7 @@ if ('serviceWorker' in navigator) {
       //     reg.unregister()
       //   })
       // })
-      const reg = await navigator.serviceWorker.register('sw.js', {
-        scope: '/test-sw',
-      })
+      const reg = await navigator.serviceWorker.register('sw.js')
     } catch (e) {
       console.error(e)
     }
