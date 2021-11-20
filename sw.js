@@ -1,4 +1,4 @@
-const version = 'v2'
+const version = 'v3'
 const baseUrl = '/test-sw'
 const filenames = ['/', '/style.css', '/app.js'].map((url) => baseUrl + url)
 
