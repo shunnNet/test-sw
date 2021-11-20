@@ -1,17 +1,18 @@
 const version = 'v1'
 const baseUrl = '/test-sw'
-const filenames = ['/index.html', '/style.css', '/app.js'].map(
-  (url) => baseUrl + url
-)
+const filenames = ['/', '/style.css', '/app.js'].map((url) => baseUrl + url)
 
 self.addEventListener('install', function (event) {
+  console.log('install')
   event.waitUntil(addCaches(version, filenames))
 })
 self.addEventListener('activate', function (event) {
+  console.log('activate')
   event.waitUntil(deleteOldCaches(version))
 })
 
 self.addEventListener('fetch', function (event) {
+  console.log('fetch')
   event.respondWith(getFile(event))
 })
 
