@@ -1,5 +1,8 @@
 const version = 'v1'
-const filenames = ['/index.html', '/style.css', '/app.js']
+const baseUrl = '/test-sw'
+const filenames = ['/index.html', '/style.css', '/app.js'].map(
+  (url) => baseUrl + url
+)
 
 self.addEventListener('install', function (event) {
   event.waitUntil(addCaches(version, filenames))
